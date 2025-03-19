@@ -68,9 +68,9 @@
     const btn = document.getElementById("next-btn");
     let index = 0;
     let previousIndex = 0;
+    let randomNum = 0;
 
     const random = ()=>{
-        let randomNum = 0;
         while(randomNum === index || randomNum === previousIndex){
            randomNum = Math.floor(Math.random() * kanaList.length);
         }
