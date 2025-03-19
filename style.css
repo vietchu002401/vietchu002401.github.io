@@ -14,6 +14,8 @@ body{
     user-select: none;
 }
 .container {
+    position: relative;
+    z-index: 2;
     display: flex;
     width: 100%;
     height: 100vh;
@@ -22,13 +24,14 @@ body{
     background: url("./media/sakura_hana.jpg") center no-repeat;
     background-size: cover;
     overflow: hidden;
+    opacity: 0.9;
 }
 .box {
     margin: auto;
     padding: 50px;
     border-radius: 30px;
-    background: white;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    background: #ffffffde;
 }
 #main {
     display: flex;
@@ -57,4 +60,12 @@ body{
 }
 .btn:hover {
     background: #c3c3c3;
+}
+
+.video {
+    position: fixed;
+    height: 100vh;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
