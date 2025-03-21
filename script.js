@@ -1,5 +1,17 @@
-const kanaList = ["あ", "い", "う", "え", "お", "か", "き", "く", "け", "こ"];
-const latinList = ["a", "i", "u", "e", "o", "ka", "ki", "ku", "ke", "ko"];
+const kanaList = [
+  "あ", "い", "う", "え", "お",
+  "か", "き", "く", "け", "こ",
+  "さ", "し", "す", "せ", "そ",
+  "た", "ち", "つ", "て", "と"
+];
+
+const latinList = [
+  "a", "i", "u", "e", "o",
+  "ka", "ki", "ku", "ke", "ko",
+  "sa", "shi", "su", "se", "so",
+  "ta", "chi", "tsu", "te", "to"
+];
+
 const nameKana = document.getElementById("name-kana");
 const nameLatin = document.getElementById("name-latin");
 const btn = document.getElementById("next-btn");
